@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix India</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://i.pinimg.com/736x/0c/cc/0a/0ccc0ad61d6a1b18f7d53e636ba0979c.jpg" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="React.css" />
+  </head>
+
+  <body style="background-color: black; color: white;">
+
+    <!-- ✅ Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent px-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" height="30" alt="Netflix" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <span style="font-size: medium; font-weight: bold; color: blue;"></span><li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">TV Shows</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Movies</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Latest</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">My List</a></li>
+          </ul>
+          <button class="btn btn-danger">Sign In</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ✅ Hero Section -->
+    <section class="hero d-flex align-items-center text-center text-white" style="height: 100vh; background: url('https://i.pinimg.com/736x/af/f0/6f/aff06fb3660a32e8f90bde5c46d3c80f.jpg') no-repeat center center/cover;">
+      <div class="overlay" style="position:absolute; width:100%; height:100%; background:rgba(0,0,0,0.6); top:0; left:0;"></div>
+      <div class="container position-relative z-2">
+        <h1 class="display-4 fw-bold">Unlimited movies, TV shows and more.</h1>
+        <p class="lead mb-4">Watch anywhere. Cancel anytime.</p>
+        <form class="row justify-content-center">
+          <div class="col-md-6 col-lg-5">
+            <div class="input-group input-group-lg">
+              <input type="email" class="form-control" placeholder="Enter your email" required />
+              <button class="btn btn-danger" type="submit">Get Started</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ✅ Call-to-Action Section -->
+    <section class="container text-center text-white py-4">
+      <p class="fs-5">
+        Ready to watch? Enter your email to create or restart your membership.
+      </p>
+      <form class="row g-2 justify-content-center">
+        <div class="col-12 col-md-6 col-lg-5">
+          <input type="email" class="form-control form-control-lg" placeholder="Email address" required />
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-danger btn-lg px-4">Get Started</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="container my-5">
+      <h2 class="text-white mb-4">Trending Now</h2>
+      <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-3">
+    
+        <!-- Card 1 -->
+        <div class="col">
+          <div class="card bg-dark text-white border-0">
+            <img src="https://image.tmdb.org/t/p/w500/xOMo8BRK7PfcJv9JCnx7s5hj0PX.jpg" class="card-img-top" alt="Rebel Moon">
+            <div class="card-body p-2">
+              <h6 class="card-title mb-0 text-truncate">Rebel Moon</h6>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 2 -->
+        <div class="col">
+          <div class="card bg-dark text-white border-0">
+            <img src="https://i.pinimg.com/736x/e8/e2/a9/e8e2a9da15cc14dab5b8facdd644338f.jpg" class="card-img-top" alt="Thug life">
+            <div class="card-body p-2">
+              <h6 class="card-title mb-0 text-truncate">Thug Life</h6>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 3 -->
+        <div class="col">
+          <div class="card bg-dark text-white border-0">
+            <img src="https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg" class="card-img-top" alt="Heart of Stone">
+            <div class="card-body p-2">
+              <h6 class="card-title mb-0 text-truncate">Heart of Stone</h6>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 4 -->
+        <div class="col">
+          <div class="card bg-dark text-white border-0">
+            <img src="https://image.tmdb.org/t/p/w500/4HodYYKEIsGOdinkGi2Ucz6X9i0.jpg" class="card-img-top" alt="Spider-Man">
+            <div class="card-body p-2">
+              <h6 class="card-title mb-0 text-truncate">Spider-Man: Across the Spider-Verse</h6>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 5 -->
+        <div class="col">
+          <div class="card bg-dark text-white border-0">
+            <img src="https://image.tmdb.org/t/p/w500/yOm993lsJyPmBodlYjgpPwBjXP9.jpg" class="card-img-top" alt="The Mother">
+            <div class="card-body p-2">
+              <h6 class="card-title mb-0 text-truncate">The Mother</h6>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    
+
+
+    <section class="container my-5">
+        <h2 class="text-white text-center mb-4">Frequently Asked Questions</h2>
+      
+        <div class="accordion accordion-flush" id="faqAccordion">
+      
+          <!-- Q1 -->
+          <div class="accordion-item bg-dark text-white">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                What is Netflix?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more.
+              </div>
+            </div>
+          </div>
+      
+          <!-- Q2 -->
+          <div class="accordion-item bg-dark text-white">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                How much does Netflix cost?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one low monthly fee. Plans start at ₹149.
+              </div>
+            </div>
+          </div>
+      
+          <!-- Q3 -->
+          <div class="accordion-item bg-dark text-white">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                Where can I watch?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Watch anywhere, anytime, on an unlimited number of devices. Sign in with your Netflix account to watch instantly.
+              </div>
+            </div>
+          </div>
+      
+          <!-- Q4 -->
+          <div class="accordion-item bg-dark text-white">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                How do I cancel?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Netflix is flexible. There are no annoying contracts and no commitments. Cancel online anytime.
+              </div>
+            </div>
+          </div>
+      
+          <!-- Q5 -->
+          <div class="accordion-item bg-dark text-white">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                What can I watch on Netflix?
+              </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Netflix has an extensive library of feature films, documentaries, TV shows, anime, and more.
+              </div>
+            </div>
+          </div>
+      
+          <!-- Q6 -->
+          <div class="accordion-item bg-dark text-white">
+            <h2 class="accordion-header" id="flush-headingSix">
+              <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                Is Netflix good for kids?
+              </button>
+            </h2>
+            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Netflix has a dedicated kids experience with parental controls to ensure a safe viewing environment.
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      
+  
+  <!-- Footer -->
+
+<div class="container">
+</div>
+<div class="footer mt-auto">
+  <div class="row d-flex">
+    <div class="col">
+      <h5>Catagories</h5>
+      <ul>
+        <li>FAQ</li>
+        <li>Investor Relations </li>
+        <li>Privacy</li>
+        <li>Speed Test</li>
+      </ul>
+      <div class="col">
+        <h5>Useful links</h5>
+        <ul>
+          <li>Help Center</li>
+          <li>jobs</li>
+          <li>Cookie prefrences</li>
+          <li>About Us</li>
+          <li>Legal Notices</li>
+        </ul>
+
+        <div class="col">
+            <h6>Watch Media</h6>
+            <ul>
+              <li>Account</li>
+              <li>Ways to Watch</li>
+              <li>Corporate Information</li>
+              <li>Only on Netflix</li>
+            </ul>
+            <div class="col">
+                <h6>Netflix India Movies and TV Shows</h6>
+                <ul>
+                  <li>Media Center</li>
+                  <li>Apply links</li>
+                  <li>Terms of Use</li>
+                  <li>Contact us</li>
+                </ul>
+
+        <div class="col">
+          <h5>Get Updates</h5>
+          <input type="text" class="form-control">
+          <button class="btn btn-warning">Submit</button>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-light text-center py-3 mt-5">
+  <h3 style="font-size: 1.5em; background-color: pink;">Follow Us</h3>
+  <ul class="list-unstyled">
+      <li><a href="#">Get to Know Us</a></li>
+      <li><a href="#">Netflix India</a></li>
+      <li><a href="#">TV Shows</a></li>
+      <li><a href="#">Movies</a></li>
+      <li><a href="#">Tamil and English</a></li>
+  </ul>
+  <select name="Netflix" id="Language">
+    <option value="#">Tamil</option>
+    <option value="#">English</option>
+  </select>
+  <footer class="bg-light text-center py-3 mt-5">
+    <h3 style="font-size: 1.5em; background-color: pink;">Connect With US</h3>
+  <ul class="list-unstyled">
+    <li><a href="#">Whatsapp</a></li>
+    <li><a href="#">Facebook</a></li>
+    <li><a href="#">Twitter</a></li>
+    <li><a href="#">Instagram</a></li>
+    <img src="https://i.pinimg.com/736x/b8/a7/00/b8a7003c3c9cb54b18ece504207ebd8e.jpg" width="100"height="100" alt="">
+</ul>
+<div>
+<div class="container">
+  <div>&copy; 2025 Apple Inc. All Rights Reserved.</div>
+  <div>
+    <a href="#"><i class="fab fa-facebook mx-2"></i></a>
+    <a href="#"><i class="fab fa-twitter mx-2"></i></a>
+    <a href="#"><i class="fab fa-instagram mx-2"></i></a>
+  </div>
+</footer>
+
+
+<script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
+<script type="importmap">
+{
+  "imports": {
+    "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
+    "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.esm.min.js"
+  }
+}
+</script>
+<script type="module">
+  import * as bootstrap from 'bootstrap'
+
+  new bootstrap.Popover(document.getElementById('popoverButton'))
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
